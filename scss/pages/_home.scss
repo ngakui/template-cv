@@ -1,0 +1,89 @@
+/*
+*
+* Home Section
+*
+*/
+
+.home {
+    height: 100vh;
+    width: 100%;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    background-image: url('assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(59, 58, 58, 0.50);
+}
+
+
+.logo > img {
+    border-radius: 50%;
+}
+
+.home-obj {
+   padding-top: 100px;
+  //   position: relative;
+  //   color: #ffffff;  
+  //   font-size: 14rem;
+  //   line-height: 0.9;
+  //   text-align: center;
+  }
+
+.home-title {
+    // margin-top: 160px;
+    font-size: 60px;
+}
+
+.home-middle {
+    margin-top: 100px;
+}
+
+.social-logo {
+    width: 70px;
+}
+
+.social-logo > img{
+    width: 100%;
+}
+
+.main-title {
+    font-size: 25px;
+}
+
+.character {
+    font-size: 30px;
+}
+
+.main-image {
+  width: 300px;
+  height: 300px;
+//   border-radius: 50%;
+}
+
+.main-image > img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.home-bottom {
+    margin-top: 50px;
+}
+
+.home-arrow {
+    width: 80px;
+    margin: 0 auto;
+}
+
+.home-arrow > img{
+    width: 100%;
+}

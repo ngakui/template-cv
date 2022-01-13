@@ -1,0 +1,130 @@
+/*
+*
+* Portfolio Section
+*
+*/
+
+.porfolio-image figure {
+    position: relative;
+    overflow: hidden;
+    text-align: center; 
+}
+  
+   
+.porfolio-image figure img {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    opacity: 1; 
+}
+  
+.porfolio-image figure figcaption {
+    position: absolute;
+    color: #fff;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; 
+}
+  
+.porfolio-image figure figcaption,
+.porfolio-image figure figcaption > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+}
+  
+.porfolio-image figure figcaption > a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0; 
+}
+  
+.porfolio-image figure .h4,
+.porfolio-image figure p {
+    margin: 0; 
+}
+
+ figure.effect figcaption::before,
+ figure.effect figcaption::after {
+  position: absolute;
+  content: '';
+  opacity: 0; }
+
+ figure.effect figcaption::before {
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  transform: scale(0, 0);
+  transform-origin: 0 0; }
+
+ figure.effect figcaption::after {
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  transform: scale(0, 0);
+  transform-origin: 100% 0; }
+
+ figure.effect .h4 {
+  margin-top: 25%;
+  transition: transform 0.35s;
+  opacity: 0; }
+  @media (max-width: 480px) {
+     figure.effect .h4 {
+      font-size: 14px; } }
+
+ figcaption .container {
+  position: absolute;
+  width: 100%;
+  bottom: 20px; }
+
+ figure.effect p,
+ figure.effect button {
+  padding: 0.5em 2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform 0.35s;
+  opacity: 0; }
+
+ figure.effect img,
+ figure.effect .h4 {
+  transform: scale(1.06, 1.06); }
+
+ figure.effect img,
+ figure.effect figcaption::before,
+ figure.effect figcaption::after,
+ figure.effect p {
+  transition: opacity 0.35s, transform 0.35s; }
+
+ figure.effect:hover img {
+  opacity: 1;
+  transform: translate3d(0, 0, 0); }
+
+ figure.effect:hover figcaption::before,
+ figure.effect:hover figcaption::after {
+  opacity: 1;
+  transform: scale(1); }
+
+ figure.effect:hover figcaption:before {
+  background: rgba(27, 23, 23, 0.5); }
+
+ figure.effect:hover .h4,
+ figure.effect:hover p,
+ figure.effect:hover button {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  color: #fff; }
+
+ figure.effect:hover figcaption::after,
+ figure.effect:hover .h4,
+ figure.effect:hover p,
+ figure.effect:hover img {
+  transition-delay: 0.15s; }
+
+.image-on {
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3); 
+}

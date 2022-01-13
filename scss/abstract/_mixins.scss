@@ -1,0 +1,10 @@
+@mixin font($size: 16px, $weight: 400) {
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin meduim {
+    @media screen and (max-width: 720px) {
+        @content;
+    }
+}

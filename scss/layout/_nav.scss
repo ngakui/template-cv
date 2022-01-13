@@ -1,0 +1,47 @@
+/*
+*
+*   Nav bar 
+*
+*/
+
+:root {
+    --bg-nav: magenta;
+}
+
+nav {
+    height: 80px;
+    background-color: transparent !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+
+    @include meduim {
+        background-color: yellow;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+        @include font(20px, 700);
+        &:hover {
+            text-decoration: underline;
+            background-color: white;
+        }
+    }
+    ul {
+        display: flex;
+        gap: 20px;
+        justify-self: flex-end;
+        list-style: none;
+    }
+}
+
+// .button {
+//     padding: 1rem 2rem;
+//     background-color: blue;
+// }
+
+// .button-red {
+//     @extend .button;
+//     background-color: red;
+// }
