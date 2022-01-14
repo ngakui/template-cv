@@ -21,6 +21,11 @@ gulp.task('html', function () {
         .pipe(gulp.dest('./final_template'));
 })
 
+gulp.task('assets', function () {
+    return gulp.src(['./assets/**/*'])
+        .pipe(gulp.dest('./final_template/assets'));
+})
+
 gulp.task('compile', function() {
     gulp.watch('./scss/**/*.scss', gulp.series('sass'))
     gulp.watch('./index.html', gulp.series('html'))
